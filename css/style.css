@@ -70,9 +70,9 @@ p {
   background-color: hsla(178, 100%, 50%, 55%);
   border-radius: 10px;
   -webkit-border-radius: 10px;
-  transition-property:  opacity;
+  transition-property: opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: .4s;
+  transition-duration: .3s;
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -91,6 +91,13 @@ p {
 .card__title {
   font-size: 2.2rem;
   margin: 2rem 0 1.4rem;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: .2s;
+}
+
+.card__title:hover {
+  color: var(--cyan);
 }
 
 .card__description {
@@ -154,4 +161,11 @@ p {
 
 .card__author--name {
   color: var(--white);
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: .2s;
+}
+
+.card__author--name:hover {
+  color: var(--cyan);
 }
