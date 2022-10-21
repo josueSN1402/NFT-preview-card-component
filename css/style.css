@@ -54,6 +54,34 @@ p {
     0 25px 0 38px hsla(0, 0%, 0%, 0.05);
 }
 
+.card__figure {
+  position: relative;
+  height: 286px;
+}
+
+.card__figure::after {
+  content: url('../images/icon-view.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 55%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition-property:  opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.card__figure:hover::after {
+  opacity: 1;
+}
+
 .card__figure img {
   width: 100%;
   border-radius: 10px;
