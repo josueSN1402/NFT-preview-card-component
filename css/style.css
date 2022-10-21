@@ -50,6 +50,8 @@ p {
   background-color: var(--dark-blue-card);
   border-radius: 15px;
   -webkit-border-radius: 15px;
+  box-shadow: 0 25px 0 15px var(--black),
+    0 25px 0 38px hsla(0, 0%, 0%, 0.05);
 }
 
 .card__figure img {
